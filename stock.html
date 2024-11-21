@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http- equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exp__5b</title>
+</head>
+
+<body>
+    <script>
+        let c = 0;
+        const stock =
+            setInterval(stokc,
+                3000);
+        function stokc() {
+            var myPromise = new Promise(function(resolve, reject) {
+                        setTimeout(function () {
+                            var a =Math.floor(Math.random() * 10);
+                            resolve(a);
+                        }, 3000);
+                    });
+            myPromise.then(
+                function (data) {
+                    console.log(data);
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
+            c += 1;
+            if (c === 5) {
+                Stop();
+            }
+        }
+        function Stop() {
+            clearInterval(stock);
+        }
+    </script>
+</body>
+
+</html>
+<!-- const express = require('express');
+const mongoose = require('mongoose');
+consturl = "mongodb://0.0.0.0:27017/Hell";
+mongoose.connect(url, { useNewUrlParser: true }, { useUnifiedTopology: true }).then(() =>
+console.log("D atabase Connected. ... ")).catch(err => console.log(err));
+var bookSchema = mongoose.Schema({
+name: String,
+isbn: { type: String, index: true }, author: String, pages: Number
+});
+var Book = mongoose.model("Book", bookSchema);
+var db = mongoose.connection;
+var deleteBook = function () {
+Book.deleteMany({ name: "JAva" }, function (err, result) {
+    if (err) console.log(err); else
+    console.log("deleted")
+    }).exec();
+    }
+    deleteBook(); -->
+    <!-- class Product {
+        static productPrice: string;
+        productId: number;
+        constructor() {
+        this.productId = 1234;
+        }
+        getProductId(): string {
+        return 'Product id is : ' + this.productId;
+        }
+        }
+        const product: Product = new Product();
+        const p = {
+        producti: product.getProductId(),
+        };
+        console.log(p.producti); ##ts-node filename.ts-->

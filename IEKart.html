@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectioning Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background: blue;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section, article, aside {
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        section {
+            background: blue;
+        }
+
+        article {
+            background: blue;
+            border-radius: 5px;
+        }
+
+        aside {
+            background: blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>Main content here.</p>
+        </section>
+        <section>
+            <h3>Article</h3>
+            <p>Article content.</p>
+        </section>
+        <aside>
+            <p>Additional info.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
+<!-- const express = require('express');
+const mongoose = require('mongoose');
+consturl = "mongodb://0.0.0.0:27017/Hell";
+mongoose.connect(url, { useNewUrlParser: true }, { useUnifiedTopology: true }).then(() =>
+console.log("D atabase Connected. ... ")).catch(err => console.log(err));
+var bookSchema = mongoose.Schema({
+name: String,
+isbn: { type: String, index: true }, author: String, pages: Number
+});
+var Book = mongoose.model("Book", bookSchema);
+var db = mongoose.connection;
+var book1 = new Book({
+name: "Mongoose Demo 1", isbn: "MNG123", author: "Author1, Author2", pages: 123
+});
+book1.save(function (err) {
+if (err)
+throw err;
+console.log("Book Saved Successfully");
+}); -->
+<!-- function orderDetails<T>(arg: Array<T>): Array<T> {
+    console.log(arg.length);
+    return arg;
+    }
+    const orderid: Array = [201, 202, 203, 204];
+    const ordername: Array = ['Dresses', 'Toys', 'Footwear', 'cds'];
+    const idList = orderDetails(orderid);
+    console.log(idList);
+    const nameList = orderDetails(ordername);
+    console.log(nameList);  ##ts-node filename.ts-->
